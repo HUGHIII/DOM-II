@@ -85,4 +85,12 @@ const dragDelete = document.querySelector('.intro img');
 
 dragDelete.addEventListener('dragstart',() => {
     dragDelete.style.display= 'none';
+});
+
+// load event 10
+
+const loadEvent = document.querySelector('body');
+
+window.addEventListener('load', () => {
+    loadEvent.style.background = 'pink';
 })
