@@ -79,4 +79,10 @@ copyTxt.addEventListener('copy',() => {
 });
 
 
-//
+// dragstart 9
+
+const dragDelete = document.querySelector('.intro img');
+
+dragDelete.addEventListener('dragstart',() => {
+    dragDelete.style.display= 'none';
+})
