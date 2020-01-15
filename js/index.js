@@ -94,3 +94,4 @@ const loadEvent = document.querySelector('body');
 window.addEventListener('load', () => {
     loadEvent.style.background = 'pink';
 })
+
