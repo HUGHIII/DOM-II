@@ -93,5 +93,38 @@ const loadEvent = document.querySelector('body');
 
 window.addEventListener('load', () => {
     loadEvent.style.background = 'pink';
+});
+
+const stopParent = document.querySelector('.intro');
+
+stopParent.addEventListener('click', () => {
+    stopParent.style.background = 'blue';
+});
+
+const stopChild = document.querySelector('.intro h2');
+stopChild.addEventListener('click', () => {
+    stopChild.style.background = 'red';
+});
+
+stopChild.addEventListener('click', (event) => {
+    event.stopPropagation();
+})
+
+
+// const navEvents = document.querySelectorAll('.nav-link');
+
+// navEvents.forEach( element => {
+//     element.addEventListener('mouseenter',() =>{
+//         element.style.color = 'blue';
+        
+//     })
+
+
+const preventNavElements = document.querySelectorAll('.nav-link');
+
+preventNavElements.forEach ( element => {
+    element.addEventListener('click',() => {
+        event.preventDefault();
+    })
 })
 
