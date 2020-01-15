@@ -1,7 +1,7 @@
 // Your code goes here
 
 
-//nav events mouseover
+//nav events mouseover 1
 const navEvents = document.querySelectorAll('.nav-link');
 
 navEvents.forEach( element => {
@@ -10,7 +10,7 @@ navEvents.forEach( element => {
         
     })
 });
-//nav event mouseleave
+//nav event mouseleave 2
 navEvents.forEach( element => {
     element.addEventListener('mouseleave',() =>{
         
@@ -19,7 +19,7 @@ navEvents.forEach( element => {
 });
 
 
-//img resize
+//img resize 3
 
 const newHeadImg = document.querySelector('.intro img');
 
@@ -27,7 +27,7 @@ window.addEventListener('resize', () => {
     newHeadImg.src = 'https://images.pexels.com/photos/385998/pexels-photo-385998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 });
 
-// img dblclick
+// img dblclick 4
 
 const newImgLetsGo = document.querySelector('.img-content img');
 
@@ -36,7 +36,7 @@ newImgLetsGo.addEventListener('dblclick',   () => {
 });
 
 
-// event wheel intro img
+// event wheel intro img 5
 
 const message = document.querySelector('body');
 
@@ -45,7 +45,7 @@ message.addEventListener('wheel',() => {
 })
 
 
- //mousedown
+ //mousedown 6
 
  const changePicMouseD = document.querySelector('.img-content img');
  changePicMouseD.addEventListener('mousedown',() => {
@@ -60,11 +60,23 @@ message.addEventListener('wheel',() => {
 //     changePicMouseD.src = 'https://images.pexels.com/photos/40023/aurora-northern-lights-aurora-borealis-borealis-40023.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
 //  });figure out why this doesnt work************************************************
 
- //mouseup
 
-//  const changePicMouseD
 
+ //mouseup event 7
 const changePicMouseUp = document.querySelector('.img-content img');
 changePicMouseUp.addEventListener('mouseup',() => {
        changePicMouseUp.src = 'https://images.pexels.com/photos/1940036/pexels-photo-1940036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-   })
+   });
+
+
+   // select event 8
+
+   const copyTxt = document.querySelector('p');
+
+
+copyTxt.addEventListener('copy',() => {
+    alert('plagiarism')
+});
+
+
+//
